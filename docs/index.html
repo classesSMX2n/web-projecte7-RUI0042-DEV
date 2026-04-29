@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodLogistic S.A. — Logística alimentària i transport de productes frescos a nivell europeu. Confiança, eficiència i sostenibilitat." />
+  <meta name="keywords" content="logística alimentària, transport refrigerat, distribució europea, cadena de fred, FoodLogistic" />
+  <meta property="og:title" content="FoodLogistic S.A. — Logística Alimentària Europea" />
+  <meta property="og:description" content="Transport refrigerat i distribució de productes frescos arreu d'Europa." />
+  <title>FoodLogistic S.A. — Logística Alimentària Europea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300&family=Barlow+Condensed:wght@500;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       BANNER DE COOKIES
+  =========================== -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc" hidden>
+    <div class="cookie-banner-inner">
+      <div class="cookie-icon" aria-hidden="true">🍪</div>
+      <div class="cookie-text">
+        <p id="cookie-title" class="cookie-title">Utilitzem cookies</p>
+        <p id="cookie-desc" class="cookie-desc">
+          Fem servir cookies pròpies i de tercers per millorar la teva experiència de navegació i obtenir estadístiques de visita (StatCounter). 
+          Pots acceptar-les totes, rebutjar les no essencials o consultar la nostra 
+          <a href="politica-cookies.html" class="cookie-link">Política de Cookies</a>.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-btn--reject" id="cookie-reject">Rebutjar opcionals</button>
+        <button class="cookie-btn cookie-btn--settings" id="cookie-settings" onclick="window.location='politica-cookies.html'">Configurar</button>
+        <button class="cookie-btn cookie-btn--accept" id="cookie-accept">Acceptar totes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+       NAVIGATION
+  =========================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" role="navigation" aria-label="Navegació principal">
+      <a href="#inici" class="nav-logo" aria-label="FoodLogistic S.A. — Pàgina d'inici">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#2DBE6C"/>
+            <path d="M6 24V14l6-6h12l6 6v10H6z" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round"/>
+            <circle cx="11" cy="26" r="3" fill="white"/>
+            <circle cx="25" cy="26" r="3" fill="white"/>
+            <path d="M6 18h24" stroke="white" stroke-width="2" stroke-dasharray="3 2"/>
+            <path d="M18 8v10" stroke="white" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="logo-text">Food<strong>Logistic</strong></span>
+        <span class="logo-tag">S.A.</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Obre o tanca el menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#inici" class="nav-link">Inici</a></li>
+        <li><a href="#serveis" class="nav-link">Serveis</a></li>
+        <li><a href="#sobre-nosaltres" class="nav-link">Sobre nosaltres</a></li>
+        <li><a href="#contacte" class="nav-link nav-cta">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         HERO — INICI
+    =========================== -->
+    <section class="hero" id="inici" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1800&q=80"
+          alt="Camió de transport refrigerat circulant per una autopista europea a la posta de sol"
+          class="hero-bg"
+          loading="eager"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge" aria-label="Operant arreu d'Europa des de 2003">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Operant arreu d'Europa des del 2003
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          La cadena de fred<br />
+          <em>que mai s'atura.</em>
+        </h1>
+        <p class="hero-subtitle">
+          Distribuïm productes frescos i refrigerats arreu d'Europa amb la màxima precisió, eficiència i compromís mediambiental.
+          Més de 2.400 clients confien en nosaltres cada dia.
+        </p>
+        <div class="hero-actions">
+          <a href="#serveis" class="btn btn-primary">Descobreix els nostres serveis</a>
+          <a href="#contacte" class="btn btn-ghost">Parla amb un expert</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Xifres clau">
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number" data-target="2400">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Clients actius</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number" data-target="28">0</span>
+            <span class="stat-label">Països europeus</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number" data-target="97">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Lliuraments puntuals</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number" data-target="850">0</span>
+            <span class="stat-label">Vehicles de flota</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#serveis" class="hero-scroll" aria-label="Desplaça't cap avall">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ===========================
+         STRIP — PARTNERS / CERTIFICATS
+    =========================== -->
+    <section class="trust-strip" aria-label="Certificacions i reconeixements">
+      <div class="container trust-inner">
+        <span class="trust-label">Certificacions i estàndards</span>
+        <ul class="trust-list" role="list">
+          <li><span class="trust-item">ISO 22000</span></li>
+          <li><span class="trust-item">HACCP</span></li>
+          <li><span class="trust-item">GDP · Bones Pràctiques</span></li>
+          <li><span class="trust-item">ATP · Transport Perible</span></li>
+          <li><span class="trust-item">CO₂ Neutral 2030</span></li>
+          <li><span class="trust-item">BRC Logistics</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SERVEIS
+    =========================== -->
+    <section class="section services" id="serveis" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">El que fem</span>
+          <h2 class="section-title" id="services-title">Solucions integrals per a la logística alimentària</h2>
+          <p class="section-subtitle">Cobrim tot el cicle de vida del producte fresc: des de l'origen fins al punt de venda, sense interrupcions ni sorpreses.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Servei 1 -->
+          <article class="service-card service-card--featured" aria-labelledby="serv-1-title">
+            <div class="service-card-media">
+              <img
+                src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=75"
+                alt="Camió frigorífic en ruta per autopista europea"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M2 8h17v12H2V8zM19 11l7 3v6h-7V11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7" cy="22" r="2" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="22" r="2" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <h3 class="service-title" id="serv-1-title">Transport Refrigerat</h3>
+              <p class="service-desc">
+                Flota de vehicles ATP/FR equipats amb sistemes de control de temperatura en temps real. Garantim la cadena de fred des de -25°C fins a +15°C, amb monitoratge GPS 24/7 i alerta automàtica davant qualsevol desviació tèrmica.
+              </p>
+              <ul class="service-features" aria-label="Característiques del servei">
+                <li>Control tèrmic continu −25°C / +15°C</li>
+                <li>GPS i telemetria en temps real</li>
+                <li>Conductors certificats ADR i ATP</li>
+                <li>Cobertura nocturna i en festius</li>
+              </ul>
+              <a href="#contacte" class="service-link" aria-label="Demana informació sobre transport refrigerat">Sol·licita pressupost →</a>
+            </div>
+          </article>
+
+          <!-- Servei 2 -->
+          <article class="service-card" aria-labelledby="serv-2-title">
+            <div class="service-card-media">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=75"
+                alt="Mapa d'Europa amb rutes de distribució"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="2"/><path d="M3 14h22M14 3a18 18 0 010 22M14 3a18 18 0 000 22" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-title" id="serv-2-title">Distribució Europea</h3>
+              <p class="service-desc">
+                Xarxa pròpia de 28 països europeus amb hubs estratègics a Barcelona, Frankfurt, Varsòvia i Rotterdam. Temps de trànsit optimitzats i visibilitat total de la mercaderia en tot moment.
+              </p>
+              <ul class="service-features">
+                <li>Cobertura UE + UK + Suïssa + Noruega</li>
+                <li>Hubs a 4 ciutats estratègiques</li>
+                <li>Tracking en temps real per al client</li>
+                <li>Servei express 24-48 h entre capitols</li>
+              </ul>
+              <a href="#contacte" class="service-link">Sol·licita pressupost →</a>
+            </div>
+          </article>
+
+          <!-- Servei 3 -->
+          <article class="service-card" aria-labelledby="serv-3-title">
+            <div class="service-card-media">
+              <img
+                src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&q=75"
+                alt="Interior d'un magatzem frigorífic modern amb prestatgeries d'alta alçada"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="12" width="22" height="13" rx="1" stroke="currentColor" stroke-width="2"/><path d="M3 12V7l11-4 11 4v5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 25v-7h6v7" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <h3 class="service-title" id="serv-3-title">Gestió de Magatzems</h3>
+              <p class="service-desc">
+                Centres logístics propis de temperatura controlada, gestionats amb sistemes WMS avançats. Emmagatzematge sec, refrigerat i congelat, amb preparació de comandes a mesura i integració EDI amb els sistemes del client.
+              </p>
+              <ul class="service-features">
+                <li>+180.000 m² de superfície frigorífica</li>
+                <li>WMS integrat amb ERP del client</li>
+                <li>Pick & Pack i cross-docking</li>
+                <li>Inventari en temps real i auditoria 24/7</li>
+              </ul>
+              <a href="#contacte" class="service-link">Sol·licita pressupost →</a>
+            </div>
+          </article>
+
+          <!-- Servei 4 -->
+          <article class="service-card service-card--green" aria-labelledby="serv-4-title">
+            <div class="service-card-media">
+              <img
+                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=75"
+                alt="Panells solars i vehicles elèctrics en centre logístic sostenible"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3C8.477 3 4 7.477 4 13c0 3.866 2.07 7.25 5.17 9.11L14 25l4.83-2.89A10 10 0 0024 13c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="2"/><path d="M14 8v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="service-title" id="serv-4-title">Logística Sostenible</h3>
+              <p class="service-desc">
+                Pla d'acció climàtica per assolir la neutralitat de carboni el 2030. Flota elèctrica i d'hidrogen per a les últimes milles, centres logístics amb energia 100% renovable i embalatge reutilitzable certificat.
+              </p>
+              <ul class="service-features">
+                <li>−42% emissions CO₂ respecte 2019</li>
+                <li>280 vehicles elèctrics en servei</li>
+                <li>Energia solar als 12 centres propis</li>
+                <li>Informe de petjada de carboni per comanda</li>
+              </ul>
+              <a href="#contacte" class="service-link">Sol·licita pressupost →</a>
+            </div>
+          </article>
+
+          <!-- Servei 5 (aportació Rui) -->
+          <article class="service-card service-card--compact" id="servei-consultoria" aria-labelledby="serv-5-title">
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 20V10l5-5h10l5 5v10H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 28v-8h8v8" stroke="currentColor" stroke-width="2"/><path d="M8 10h12M14 10v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="service-title" id="serv-5-title">Consultoria Logística</h3>
+              <p class="service-desc">
+                Analitzem la vostra cadena de subministrament i proposem millores per reduir costos, emissions i temps de trànsit. Pla d'acció personalitzat amb KPIs mesurables i seguiment mensual.
+              </p>
+              <ul class="service-features" aria-label="Característiques del servei">
+                <li>Auditoria completa de processos logístics</li>
+                <li>Pla de sostenibilitat ESG certificat</li>
+                <li>Optimització de rutes amb IA</li>
+                <li>Informes de KPIs mensuals</li>
+              </ul>
+              <a href="#contacte" class="service-link" aria-label="Demana informació sobre consultoria logística">Sol·licita pressupost →</a>
+            </div>
+          </article>
+
+          <!-- Servei 6 (aportació Rui) -->
+          <article class="service-card service-card--compact service-card--tech" id="servei-fl360" aria-labelledby="serv-6-title">
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="5" width="22" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 23h10M14 21v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 10h5M7 14h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-title" id="serv-6-title">Plataforma Digital FL360°</h3>
+              <p class="service-desc">
+                Portal client exclusiu amb visibilitat total de les vostres comandes, estoc i documents en temps real des de qualsevol dispositiu. Integrat amb ERP/SAP i disponible a iOS i Android.
+              </p>
+              <ul class="service-features" aria-label="Característiques del servei">
+                <li>Dashboard de comandes en viu</li>
+                <li>Integració amb ERP/SAP</li>
+                <li>App mòbil iOS i Android</li>
+                <li>API oberta per a integracions</li>
+              </ul>
+              <a href="#contacte" class="service-link" aria-label="Demana informació sobre la plataforma FL360">Sol·licita pressupost →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         BANDER DE XIFRES
+    =========================== -->
+    <section class="numbers-band" aria-label="Dades clau de l'empresa">
+      <div class="container numbers-grid">
+        <div class="number-item">
+          <span class="number-val" data-target="2400" aria-label="2400 clients actius">2.400<sup>+</sup></span>
+          <span class="number-label">Clients actius</span>
+        </div>
+        <div class="number-item">
+          <span class="number-val">180.000</span>
+          <span class="number-label">m² d'emmagatzematge</span>
+        </div>
+        <div class="number-item">
+          <span class="number-val">850</span>
+          <span class="number-label">Vehicles a la flota</span>
+        </div>
+        <div class="number-item">
+          <span class="number-val">28</span>
+          <span class="number-label">Països europeus</span>
+        </div>
+        <div class="number-item">
+          <span class="number-val">97<sup>%</sup></span>
+          <span class="number-label">Lliuraments puntuals</span>
+        </div>
+        <div class="number-item">
+          <span class="number-val">−42<sup>%</sup></span>
+          <span class="number-label">Reducció CO₂ des de 2019</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SOBRE NOSALTRES
+    =========================== -->
+    <section class="section about" id="sobre-nosaltres" aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="about-intro">
+          <div class="section-header section-header--left">
+            <span class="section-tag">Qui som</span>
+            <h2 class="section-title" id="about-title">Vint anys movent el millor de la taula europea</h2>
+          </div>
+          <p class="about-lead">
+            FoodLogistic S.A. neix el 2003 a Barcelona amb una missió clara: garantir que els productes frescos arribin als consumidors europeus en perfectes condicions, en el temps acordat i amb el menor impacte ambiental possible. Avui som un dels principals operadors logístics especialitzats en alimentació de tot el continent.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-visual">
+            <div class="about-img-main">
+              <img
+                src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=900&q=80"
+                alt="Equip de professionals de FoodLogistic revisant documents a la sala de control del centre logístic"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-img-secondary">
+              <img
+                src="https://images.unsplash.com/photo-1565793979476-5e0d4af01a8d?auto=format&fit=crop&w=600&q=75"
+                alt="Interior d'un magatzem frigorífic amb treballadors operant sistemes de picking"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-badge-floating" aria-label="Fundada el 2003">
+              <strong class="badge-year">2003</strong>
+              <span>Any de fundació</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-block">
+              <div class="about-block-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L2 7v8l9 5 9-5V7l-9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h3>La nostra missió</h3>
+                <p>Garantir la continuïtat i la qualitat de la cadena alimentària europea, connectant productors i consumidors amb solucions logístiques fiables, tecnològicament avançades i respectuoses amb el medi ambient.</p>
+              </div>
+            </div>
+
+            <div class="about-block">
+              <div class="about-block-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M11 6v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h3>La nostra visió</h3>
+                <p>Ser l'operador logístic de referència en alimentació fresca a Europa el 2030, amb operacions completament descarbonitzades, infraestructura digital de primer nivell i un servei que defineixi nous estàndards del sector.</p>
+              </div>
+            </div>
+
+            <div class="about-block">
+              <div class="about-block-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 3C11 3 4 7 4 12a7 7 0 0014 0c0-5-7-9-7-9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h3>Els nostres valors</h3>
+                <p>Precisió, transparència, sostenibilitat i tracte proper. Cada decisió que prenem passa el filtre d'aquests quatre principis, des de la selecció de proveïdors fins a la darrera milla de distribució.</p>
+              </div>
+            </div>
+
+            <div class="about-timeline" aria-label="Fites de l'empresa">
+              <div class="timeline-item">
+                <span class="timeline-year">2003</span>
+                <span class="timeline-event">Fundació a Barcelona. Primera flota de 12 vehicles.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2009</span>
+                <span class="timeline-event">Expansió a França, Itàlia i Alemanya. Certificació ISO 22000.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2015</span>
+                <span class="timeline-event">Obertura del hub de Frankfurt. Xarxa en 18 països.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2020</span>
+                <span class="timeline-event">Pla de descarbonització. Primers 50 vehicles elèctrics.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2024</span>
+                <span class="timeline-event">Cobertura de 28 països. 850 vehicles. 2.400+ clients.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EQUIP -->
+        <div class="team-section" aria-labelledby="team-title">
+          <h3 class="team-heading" id="team-title">L'equip directiu</h3>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-avatar" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=75" alt="Marc Puigdomènech, CEO de FoodLogistic" loading="lazy" />
+              </div>
+              <h4 class="team-name">Marc Puigdomènech</h4>
+              <span class="team-role">CEO & Co-fundador</span>
+              <p class="team-bio">Enginyer industrial per la UPC. 25 anys d'experiència en logística europea.</p>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&h=200&q=75" alt="Silvia Márquez, COO de FoodLogistic" loading="lazy" />
+              </div>
+              <h4 class="team-name">Sílvia Márquez</h4>
+              <span class="team-role">Directora d'Operacions</span>
+              <p class="team-bio">Especialista en supply chain refrigerada. Lidera els 12 centres logístics propis.</p>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=75" alt="Thomas Richter, Director de Sostenibilitat" loading="lazy" />
+              </div>
+              <h4 class="team-name">Thomas Richter</h4>
+              <span class="team-role">Director de Sostenibilitat</span>
+              <p class="team-bio">Arquitecte del Pla CO₂ Neutral 2030. MBA per ESADE i certificat en Green Logistics.</p>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&h=200&q=75" alt="Anna Kowalczyk, Directora Comercial Europa" loading="lazy" />
+              </div>
+              <h4 class="team-name">Anna Kowalczyk</h4>
+              <span class="team-role">Directora Comercial Europa</span>
+              <p class="team-bio">Gestiona les aliances estratègiques a 28 mercats europeus. Basada a Varsòvia.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================
+         CTA BAND
+    =========================== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="cta-band-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1800&q=60" alt="" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content">
+        <h2 class="cta-title" id="cta-title">Preparat per optimitzar la teva cadena de subministrament?</h2>
+        <p class="cta-sub">Parla amb el nostre equip i descobreix com FoodLogistic pot transformar la teva logística alimentària en un avantatge competitiu real.</p>
+        <a href="#contacte" class="btn btn-primary btn--large">Contacta'ns avui</a>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CONTACTE
+    =========================== -->
+    <section class="section contact" id="contacte" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+
+        <div class="contact-info">
+          <div class="section-header section-header--left">
+            <span class="section-tag">Contacte</span>
+            <h2 class="section-title contact-title" id="contact-title">Parlem del teu projecte logístic</h2>
+          </div>
+          <p class="contact-lead">
+            El nostre equip comercial t'atendrà en menys de 24 hores. Explica'ns les teves necessitats i prepararem una proposta a mida per al teu negoci.
+          </p>
+
+          <ul class="contact-details" role="list">
+            <li>
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.686 2 4 4.686 4 8c0 4.418 6 10 6 10s6-5.582 6-10c0-3.314-2.686-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" stroke="currentColor" stroke-width="1.6"/></svg>
+              </div>
+              <div>
+                <strong>Seu Central</strong>
+                <span>Carrer de la Llacuna, 162 — 08018 Barcelona, Espanya</span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5a1 1 0 011-1h12a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V5zm0 0l7 5 7-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Correu electrònic</strong>
+                <a href="mailto:info@foodlogistic.eu">info@foodlogistic.eu</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 4a1 1 0 011-1h3l1 4-2 1a11 11 0 005 5l1-2 4 1v3a1 1 0 01-1 1C7.163 16 4 8.837 4 5a1 1 0 010-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Telèfon</strong>
+                <a href="tel:+34932456789">+34 93 245 67 89</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Horari d'atenció</strong>
+                <span>Dilluns–Divendres · 08:00 – 18:00 h CET</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-hubs" aria-label="Hubs europeus">
+            <p class="hubs-label">Hubs europeus</p>
+            <div class="hubs-list">
+              <span class="hub-tag">🇪🇸 Barcelona</span>
+              <span class="hub-tag">🇩🇪 Frankfurt</span>
+              <span class="hub-tag">🇳🇱 Rotterdam</span>
+              <span class="hub-tag">🇵🇱 Varsòvia</span>
+              <span class="hub-tag">🇫🇷 Lió</span>
+              <span class="hub-tag">🇮🇹 Milà</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULARI -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate aria-label="Formulari de contacte">
+            <div class="form-header">
+              <h3>Envia'ns un missatge</h3>
+              <p>Tots els camps marcats amb <span aria-hidden="true">*</span><span class="sr-only">asterisc</span> són obligatoris.</p>
+            </div>
+
+            <div class="form-row form-row--two">
+              <div class="form-group">
+                <label for="nom" class="form-label">Nom complet <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  class="form-input"
+                  placeholder="Maria García López"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="empresa" class="form-label">Empresa</label>
+                <input
+                  type="text"
+                  id="empresa"
+                  name="empresa"
+                  class="form-input"
+                  placeholder="Distribucions XYZ S.L."
+                  autocomplete="organization"
+                />
+              </div>
+            </div>
+
+            <div class="form-row form-row--two">
+              <div class="form-group">
+                <label for="email" class="form-label">Correu electrònic <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="maria@empresa.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefon" class="form-label">Telèfon <span aria-hidden="true">*</span></label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  class="form-input"
+                  placeholder="+34 600 000 000"
+                  required
+                  autocomplete="tel"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servei" class="form-label">Servei d'interès</label>
+              <select id="servei" name="servei" class="form-input form-select">
+                <option value="">Selecciona un servei...</option>
+                <option value="transport">Transport Refrigerat</option>
+                <option value="distribucio">Distribució Europea</option>
+                <option value="magatzem">Gestió de Magatzems</option>
+                <option value="sostenible">Logística Sostenible</option>
+                <option value="consultoria">Consultoria Logística</option>
+                <option value="fl360">Plataforma Digital FL360°</option>
+                <option value="integral">Solució Integral</option>
+                <option value="altres">Altres consultes</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="missatge" class="form-label">Missatge <span aria-hidden="true">*</span></label>
+              <textarea
+                id="missatge"
+                name="missatge"
+                class="form-input form-textarea"
+                placeholder="Descriu les teves necessitats logístiques: volums, freqüència, destinacions, requisits especials de temperatura..."
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <!-- CHECKBOX 1: Consentiment de dades (obligatori) -->
+            <div class="form-group form-check">
+              <label class="form-checkbox-label">
+                <input type="checkbox" name="privacitat" id="privacitat" required aria-required="true" />
+                <span class="form-checkmark" aria-hidden="true"></span>
+                <span>He llegit i accepto la <a href="politica-privacitat.html" class="form-link" target="_blank">Política de Privacitat</a> i autoritzo el tractament de les meves dades personals per gestionar la meva consulta. <span aria-hidden="true">*</span></span>
+              </label>
+            </div>
+
+            <!-- CHECKBOX 2: Comunicacions comercials (opcional) -->
+            <div class="form-group form-check">
+              <label class="form-checkbox-label">
+                <input type="checkbox" name="comunicacions" id="comunicacions" />
+                <span class="form-checkmark" aria-hidden="true"></span>
+                <span>Accepto rebre comunicacions comercials, novetats i ofertes de FoodLogistic S.A. per correu electrònic. Podeu consultar les condicions a l'<a href="avis-legal.html" class="form-link" target="_blank">Avís Legal</a>.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn--full" id="form-submit">
+              <span class="btn-text">Enviar missatge</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <!-- Success message -->
+            <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#2DBE6C" stroke-width="2"/><path d="M7 12l3 3 7-7" stroke="#2DBE6C" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Missatge enviat correctament!</strong>
+                <p>El nostre equip et contactarà en menys de 24 hores. Gràcies per confiar en FoodLogistic.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inici" class="nav-logo footer-logo" aria-label="FoodLogistic S.A. - Torna a l'inici">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="#2DBE6C"/>
+                <path d="M6 24V14l6-6h12l6 6v10H6z" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round"/>
+                <circle cx="11" cy="26" r="3" fill="white"/>
+                <circle cx="25" cy="26" r="3" fill="white"/>
+                <path d="M6 18h24" stroke="white" stroke-width="2" stroke-dasharray="3 2"/>
+                <path d="M18 8v10" stroke="white" stroke-width="2"/>
+              </svg>
+            </span>
+            <span class="logo-text">Food<strong>Logistic</strong></span>
+            <span class="logo-tag">S.A.</span>
+          </a>
+          <p class="footer-brand-desc">Logística alimentària i transport de productes frescos a nivell europeu des del 2003.</p>
+          <p class="footer-slogan">La cadena de fred que mai s'atura.</p>
+          <div class="footer-social" aria-label="Xarxes socials">
+            <a href="#" class="social-link" aria-label="LinkedIn de FoodLogistic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter/X de FoodLogistic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube de FoodLogistic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Serveis</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#serveis">Transport Refrigerat</a></li>
+            <li><a href="#serveis">Distribució Europea</a></li>
+            <li><a href="#serveis">Gestió de Magatzems</a></li>
+            <li><a href="#serveis">Logística Sostenible</a></li>
+            <li><a href="#servei-consultoria">Consultoria Logística</a></li>
+            <li><a href="#servei-fl360">Plataforma FL360°</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Empresa</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#sobre-nosaltres">Sobre FoodLogistic</a></li>
+            <li><a href="#sobre-nosaltres">Missió i Visió</a></li>
+            <li><a href="#sobre-nosaltres">L'equip directiu</a></li>
+            <li><a href="#">Pla de Sostenibilitat</a></li>
+            <li><a href="#">Treballa amb nosaltres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="avis-legal.html">Avís Legal (LSSI-CE)</a></li>
+            <li><a href="politica-privacitat.html">Política de Privacitat</a></li>
+            <li><a href="politica-cookies.html">Política de Cookies</a></li>
+            <li><a href="politica-privacitat.html#drets">Drets LOPDGDD / RGPD</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">© 2024 FoodLogistic S.A. — Tots els drets reservats. NIF: B-08234567</p>
+        <nav aria-label="Enllaços legals">
+          <ul class="footer-legal" role="list">
+            <li><a href="avis-legal.html">Avís Legal</a></li>
+            <li><a href="politica-privacitat.html">Política de Privacitat</a></li>
+            <li><a href="politica-cookies.html">Política de Cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===========================
+       BACK TO TOP
+  =========================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Torna a dalt de la pàgina" hidden>
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <path d="M10 15V5M4 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script>
+    // ---- Nav scroll effect ----
+    const header = document.getElementById('site-header');
+    const backToTop = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+      backToTop.hidden = window.scrollY < 400;
+    }, { passive: true });
+
+    // ---- Mobile nav toggle ----
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('open', !open);
+      toggle.classList.toggle('open', !open);
+    });
+
+    menu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('open');
+        toggle.classList.remove('open');
+      });
+    });
+
+    // ---- Smooth active nav ----
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => observer.observe(s));
+
+    // ---- Scroll animations ----
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.service-card, .about-block, .team-card, .number-item, .timeline-item').forEach(el => {
+      el.classList.add('anim-fade');
+      animObserver.observe(el);
+    });
+
+    // ---- Counter animation ----
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          let current = 0;
+          const step = Math.ceil(target / 60);
+          const timer = setInterval(() => {
+            current = Math.min(current + step, target);
+            el.textContent = current.toLocaleString('ca-ES');
+            if (current >= target) clearInterval(timer);
+          }, 20);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-number').forEach(el => counterObserver.observe(el));
+
+    // ---- Back to top ----
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ---- Form handling ----
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('form-success');
+    const submitBtn = document.getElementById('form-submit');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const privacitat = document.getElementById('privacitat');
+      if (!privacitat.checked) {
+        privacitat.focus();
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.querySelector('.btn-text').textContent = 'Enviant...';
+      setTimeout(() => {
+        form.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(el => el.disabled = true);
+        submitBtn.hidden = true;
+        successMsg.hidden = false;
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 1200);
+    });
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ---- Cookie Banner ----
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieKey = 'fl_cookie_consent';
+
+    function initCookieBanner() {
+      const consent = localStorage.getItem(cookieKey);
+      if (!consent) {
+        setTimeout(() => {
+          cookieBanner.hidden = false;
+          cookieBanner.classList.add('cookie-banner--visible');
+        }, 800);
+      }
+    }
+
+    function closeBanner(accepted) {
+      localStorage.setItem(cookieKey, accepted ? 'accepted' : 'rejected');
+      cookieBanner.classList.remove('cookie-banner--visible');
+      setTimeout(() => { cookieBanner.hidden = true; }, 400);
+    }
+
+    document.getElementById('cookie-accept').addEventListener('click', () => closeBanner(true));
+    document.getElementById('cookie-reject').addEventListener('click', () => closeBanner(false));
+
+    initCookieBanner();
+  </script>
+
+<!-- Default Statcounter code for FoodLogistics
+https://danielgallardorodriguez.github.io/web-corporativa/ -->
+<script type="text/javascript">
+var sc_project=13221978; 
+var sc_invisible=1; 
+var sc_security="c10831ed"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="web statistics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13221978/0/c10831ed/1/" alt="web statistics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
