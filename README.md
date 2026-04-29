@@ -2,7 +2,7 @@
 
 ![Logo](FoodLogisticLogo.png)
 
-Autors: [Rui Huang i Daniel Gallardo Rodriguez]
+Autors: Rui Huang i Daniel Gallardo Rodriguez
 
 ## Descripció
 
